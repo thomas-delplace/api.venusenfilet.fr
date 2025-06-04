@@ -23,5 +23,5 @@ const routes = require('./routes.js')
 app.use('/', routes)
 
 app.listen(API_PORT, ()=>{
-    console.log(`Serveur en cours d\'execution à l'adresse : ${API_URL}:${API_PORT}`)
+    // console.log(`Serveur en cours d\'execution à l'adresse : ${API_URL}:${API_PORT}`)
 })
