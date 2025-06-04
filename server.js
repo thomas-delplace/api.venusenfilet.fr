@@ -14,7 +14,7 @@ const APP_URL = process.env.APP_URL
 
 app.use(cors({
     origin: APP_URL,
-    methods:'POST',
+    methods:['POST','GET','OPTIONS'],
     credentials:true
 }))
 app.use(express.json())
