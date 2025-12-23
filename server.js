@@ -19,9 +19,12 @@ app.use(cors({
 }))
 app.use(express.json())
 
+app.options('*', cors())
 const routes = require('./routes.js')
 app.use('/', routes)
 
 app.listen(API_PORT, ()=>{
+    console.log(`Server running at ${API_URL}:${API_PORT}`)
+    console.log(`App allowed origin at ${APP_URL}`)
     // console.log(`Serveur en cours d\'execution à l'adresse : ${API_URL}:${API_PORT}`)
 })
